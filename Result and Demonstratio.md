@@ -41,4 +41,20 @@ Excellent classification ability for both drowsy and alert states.
 Training accuracy reached 95.92%, validation accuracy peaked at 98.62%.
 Graphs show consistent convergence and strong model generalization.
 
+## 🔔 Real-Time Scoring & Alert Mechanism
+The system uses a dynamic drowsiness scoring algorithm to evaluate driver fatigue in real time. It continuously monitors the state of both eyes using a live video feed. Here's how it works:
+
+Each video frame is processed through a trained CNN model to detect whether the driver's eyes are open or closed.
+
+If both eyes are detected as closed in a frame, a counter-based drowsiness score is incremented.
+
+If eyes are open, the score is decremented or stabilized, ensuring false positives (e.g., blinking) don't trigger alerts.
+
+## 🚨 Alarm Trigger Logic
+Once the drowsiness score crosses a defined threshold, the system assumes the driver is likely to be drowsy.
+
+At that point, an auditory alarm (alarm.wav) is triggered to alert the driver.
+
+This score-and-threshold mechanism avoids reacting to brief eye closures or blinks, focusing only on sustained signs of fatigue.
+
 
