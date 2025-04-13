@@ -25,3 +25,23 @@ KNN for binary classification (Drowsy vs Alert)
 Haar Cascades for face and eye detection
 
 Pygame for audio alerts
+
+📊 Performance
+Metric	     CNN Model	   KNN Model
+Accuracy	    98.6%	        95.0%
+F1 Score    	0.99	        0.95
+False Alarms Very Low	     Moderate
+
+
+CNN significantly outperformed KNN in both recall and precision.
+
+Real-world testing under varied lighting conditions confirmed model robustness.
+
+🔧 Features
+Real-time monitoring with minimal latency.
+
+Eye-blink and eye-closure based drowsiness scoring system.
+
+Robust alert mechanism using sound and visual feedback.
+
+Modular code for ease of integration into vehicle systems.
