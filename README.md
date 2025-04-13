@@ -30,6 +30,30 @@ Haar Cascades for face and eye detection
 
 Pygame for audio alerts
 
+🧠 Model Architecture
+Custom 10-layer CNN:
+
+Includes Conv2D, MaxPooling, Flatten, Dense, and Dropout layers.
+
+Final activation: sigmoid for binary classification (drowsy vs alert).
+
+Optimizer: Adam
+
+Loss: binary_crossentropy
+
+Metric: accuracy
+
+KNN Classifier:
+
+Used features extracted via ResNet50
+
+k-value chosen empirically (typically k=5)
+
+Input: Flattened ResNet feature vectors
+
+Output: Binary class (Drowsy or Not)
+
+
 ## 📊 Performance
 
 | Metric        | CNN Model | KNN Model  |
