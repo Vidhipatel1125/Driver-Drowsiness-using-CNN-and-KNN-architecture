@@ -15,22 +15,19 @@ Audible Alert System that triggers when signs of drowsiness persist.
 
 🧠 Technologies Used
 Python, TensorFlow, Keras
-
 OpenCV, NumPy, Scikit-learn
-
 CNN (Custom 10-layer) and ResNet50 for feature extraction
-
 KNN for binary classification (Drowsy vs Alert)
-
 Haar Cascades for face and eye detection
-
 Pygame for audio alerts
 
-📊 Performance
-Metric	     CNN Model	   KNN Model
-Accuracy	    98.6%	        95.0%
-F1 Score    	0.99	        0.95
-False Alarms Very Low	     Moderate
+## 📊 Performance
+
+| Metric        | CNN Model | KNN Model  |
+|---------------|-----------|------------|
+| Accuracy      | 98.6%     | 95.0%      |
+| F1 Score      | 0.99      | 0.95       |
+| False Alarms  | Very Low  | Moderate   |
 
 
 CNN significantly outperformed KNN in both recall and precision.
